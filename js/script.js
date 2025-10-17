@@ -43,5 +43,3 @@ function validateInput(task,date) {
     }
     return true;
 }
-
-taskList.trim();

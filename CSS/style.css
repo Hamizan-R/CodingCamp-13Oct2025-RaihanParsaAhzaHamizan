@@ -1,0 +1,23 @@
+body {
+    justify-items: center;
+    height: 100vh;
+    align-content: center;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    
+
+
+
+.todo-apps{
+    width: 100%;
+    max-width: 550px;
+    background: #F2E9DC;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.no-tasks{
+    width: 100%;
+    background: #fff;
+    margin: 3px;
+    border-radius: 5px;
+}

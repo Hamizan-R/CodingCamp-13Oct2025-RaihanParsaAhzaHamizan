@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing Github</title>
+    <title>Todo List - Hamizan </title>
+
+
+    <link rel="stylesheet" href="CSS\style.css"> 
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
+
 <body>
-    
+    <div class = "todo-apps">
+<header>
+        <h1 class="text-3xl font-bold">My Todo List</h1>
+    </header>
+
+    <main>
+        <section class="todo-app my-4">
+            <div class="input-section">
+                <input type="text" class="border p-2" id="todo-input" placeholder="Add a new task...">
+                <input type="date" class="border p-2" id="todo-date" placeholder="Add a new task...">
+                <button class="bg-blue-500 text-white px-4 py-2 rounded" onclick="addTask();">+</button>
+            </div>
+            
+        </section>
+
+        <section class="flex justify-between my-4">
+            <button class="bg-gray-300 p-2 rounded" id="filter-btn">Filter</button>
+            <button class="bg-yellow-500 text-black px-4 py-2 rounded" onclick="deleteAllTasks();">Delete All Tasks</button>
+            
+        </section>
+
+        <section class="text-center">
+            <h2 class="text-2xl text-center">List of Tasks</h2>
+            <ul id="task-list">
+                <!-- Task items will be added here dynamically -->
+            </ul>
+        </section>
+
+
+        <section>
+            <div class = "no-tasks">
+                <ul id="todo-list" class = "text-center">
+                <!-- Todo items will be added here dynamically -->
+                 
+                 <li class="text-center">No tasks added yet</li>
+                
+                </ul>
+            </div>
+        </section>
+    </main>
+
+
+    </div>
+
+    <script src="js\script.js"></script>
 </body>
+
 </html>
